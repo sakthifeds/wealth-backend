@@ -24,7 +24,7 @@ public class Portfolio {
     private String description;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "VARCHAR(50) DEFAULT 'GENERAL'")
     private PortfolioType type = PortfolioType.GENERAL;
 
 
